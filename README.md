@@ -29,14 +29,25 @@ The game must be interactive; the flow of the game should go as follows:
    Easy mode only has words of 4-6 characters; normal mode only has words of 6-8
    characters; hard mode only has words of 8+ characters.
 
+input 3 modes
+run while statements for each 
+
 2. At the start of the game, let the user know how many letters the computer's
    word contains.
+
+   blanks = length of the word 
 
 3. Ask the user to supply one guess (i.e. letter) per round. This letter can be
    upper or lower case and it should not matter. If a user enters more than one
    letter, tell them the input is invalid and let them try again.
 
+   input = guess 
+   2 inputs are invalid 
+   return invalid try again statement 
+
 4. Let the user know if their guess appears in the computer's word.
+
+if guess is in word = true
 
 5. Display the partially guessed word, as well as letters that have not been
    guessed. For example, if the word is BOMBARD and the letters guessed are a, b,
