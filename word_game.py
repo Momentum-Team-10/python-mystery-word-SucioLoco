@@ -1,9 +1,7 @@
 # brings in a random word
 import random
 word_list = open("words.txt").read().split()
-easy_word = []
-medium_word = []
-hard_word = []
+word_selection = []
         
 
 input("Please select easy, medium, or hard ")
@@ -12,9 +10,23 @@ difficulty = input()
 if difficulty == "easy":
     for word in word_list:
         if len(word) >= 4 and len(word) <= 6:
-            easy_word.append(word)
+            word_selection.append(word)
+elif difficulty == "medium":
+    for word in word_list:
+        if len(word) >= 6 and len(word) <= 8:
+            word_selection.append(word)
+elif difficulty == "hard":
+    for word in word_list:
+        if len(word) > 8:
+            word_selection.append(word)
+else: print("Please type in easy, medium, or hard")
 
-word = (random.choice(easy_word))
+print(random.choice(word_selection))
+#     for word in word_list:
+#         if len(word) >= 6 and len(word) <= 8:
+#             medium_word.append(word)
+
+# word = (random.choice(medium_word))
             
 
 # if difficulty == "medium":
