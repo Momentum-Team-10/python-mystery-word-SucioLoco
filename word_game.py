@@ -43,7 +43,7 @@ game_over = False
 while not game_over:
     print("You have " + str(tries) + " remaining")
     print(display)
-    guess = input("Please guess a letter ")
+    guess = input("Please guess a letter ") [0]
 
     i = 0
     if guess in word:
@@ -60,7 +60,9 @@ while not game_over:
         print("You Win")
         print("Would you like to play again?")
         game_over = True
+        
 
     if tries == 0:
         print("Sorry, you are out of tries.")
         game_over = True
+        print("The word was " +word)
